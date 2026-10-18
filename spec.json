@@ -1,0 +1,50 @@
+{
+    "name":  "tokenizer-lab",
+    "logo":  "🔡",
+    "exe":  "TokenizerLab.exe",
+    "desc":  "Free, open-source tokenizer playground for Windows — tokenize text like any GGUF model, count tokens, compare two. 100 MB offline MIT.",
+    "topics":  [
+                   "tokenizer",
+                   "token-count",
+                   "llm",
+                   "local-ai",
+                   "gguf",
+                   "ai-tools",
+                   "windows",
+                   "windows-10",
+                   "windows-11",
+                   "csharp",
+                   "dotnet",
+                   "btpe",
+                   "special-tokens",
+                   "context-length",
+                   "cost-estimate",
+                   "portable",
+                   "open-source",
+                   "mit-license"
+               ],
+    "features":  [
+                     "✅ **Loads real tokenizers** — reads tokenizer config from GGUF headers or Hugging Face folders, no approximations",
+                     "✅ **Color token view** — text broken into tokens with boundary markers so odd splits are visible instantly",
+                     "✅ **Token and cost count** — character, word and token totals with a per-million-token cost field",
+                     "✅ **Two-tokenizer compare** — same text side by side across two models to see who wastes context",
+                     "✅ **Special token map** — BOS, EOS and control tokens listed with their ids and rendered forms",
+                     "✅ **File batch mode** — drop a folder of texts and get a token-count table for every file",
+                     "✅ **100 MB self-contained exe** — runtime and tokenizer backend bundled, portable, offline, MIT"
+                 ],
+    "compare":  [
+                    "| Feature | **tokenizer-lab** | tiktoken web | HF tokenizers | Online counters |",
+                    "|---|:---:|:---:|:---:|:---:|",
+                    "| Price | **Free, MIT** | Free web | Free, OSS | Free web |",
+                    "| Open source | **Yes** | Yes | Yes | No |",
+                    "| Reads GGUF tokenizer config | **Yes** | No | No | No |",
+                    "| Two-tokenizer compare | **Yes** | No | No | Rare",
+                    "| Folder batch counting | **Yes** | No | Scripted | No",
+                    "| Portable, no install | **Yes, 100 MB** | Browser | Python env | Browser"
+                ],
+    "faqQ":  "how many tokens is my text? count tokens for local LLM models",
+    "faqA":  "Online counters usually run one public tokenizer, so counts drift on Llama or Mistral vocabularies by double digits. tokenizer-lab reads the actual tokenizer config out of your GGUF file and counts with it. It is a 100 MB portable exe, MIT, offline — drop a folder in and compare models side by side.",
+    "s1":  "Dark token view (#121418, orange #FB923C): text pane with colored token blocks, count bar reading 187 tokens and 412 characters, tokenizer dropdown showing Llama-3.",
+    "s2":  "Compare mode: two columns tokenizing the same paragraph, counts 187 versus 203 highlighted, delta chip reading 8 percent fewer tokens on the left.",
+    "s3":  "Special token table: BOS and EOS rows with ids, rendered forms and byte notes, filter field, footer chip reading tokenizer loaded from model.gguf."
+}
